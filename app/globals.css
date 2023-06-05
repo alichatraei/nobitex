@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: vazir;
+  src: url("../public/assets/fonts/Vazir-FD-WOL.woff") format('woff');;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -16,7 +21,27 @@
   }
 }
 
+@layer utilities {
+  .join-item:checked{
+    background-color: #85888f !important;
+    color:white !important;
+  }
+  .join-item{
+    background-color: #e3e4e5 !important ;
+    border-color: #e3e4e5 !important;
+    color:#a3a5a8 !important;
+  }
+  .card{
+    border-radius: 0;
+  }
+}
+
+*{
+  box-sizing: border-box;
+}
+
 body {
+  font-family: vazir;
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
